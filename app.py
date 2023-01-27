@@ -9,7 +9,10 @@ from passlib.apps import custom_app_context as pwd_context
 from tempfile import gettempdir
 from datetime import datetime
 from flask_mail import Mail, Message
+<<<<<<< HEAD
 from db import initialize_database
+=======
+>>>>>>> 1ad98b5242bef6c9e64bd7e1be462cc99670c356
 
 app = Flask(__name__)
 
@@ -17,6 +20,7 @@ app.config["SESSION_FILE_DIR"] = gettempdir()
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 
+<<<<<<< HEAD
 mail = Mail(app)
 Session(app)
 
@@ -59,3 +63,21 @@ def card():
 def logout():
     session.clear()
     return redirect("/")
+=======
+app.config['MAIL_SERVER']= 'smtp.mailtrap.io'
+app.config['MAIL_PORT'] = 2525
+app.config['MAIL_USERNAME'] = '0a61b7f4f7d142'
+app.config['MAIL_PASSWORD'] = '9b96ccbd6ad93a'
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['ALLOWED_EXTENSIONS'] = ALLOWED_EXTENSIONS
+
+mail = Mail(app)
+Session(app)
+
+db = SQL("sqlite:///database.db")
+
+
+>>>>>>> 1ad98b5242bef6c9e64bd7e1be462cc99670c356
