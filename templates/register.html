@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block main %}
+<main>
+    <img class="logo" src="../static/images/download.jpg" alt="tw-logo"/><br>
+    <p>Register to recieve rewards when you order authentic thai food from Takies Thai</p>
+    <form action="/register" method="POST" >
+        <input type="text" name="username" class="name" placeholder="Name">
+        <input type="tel" name="tel" class="tel" placeholder="Phone Number">
+        <input type="password" name="password" class="password" placeholder="Choose a Password">
+        <input type="submit" class="button" value="submit"/>
+        <br>
+        <p>Note: Make sure you input your name as it appears on Vuba Vuba so we can recognize you.</p>
+        
+    </form>
+    
+</main>
+{% endblock %}
