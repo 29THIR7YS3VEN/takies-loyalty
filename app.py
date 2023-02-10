@@ -26,7 +26,7 @@ db = SQL("sqlite:///database.db")
 
 @app.route("/")
 def landing():
-    return redirect("/register")
+    return redirect("/app")
 
 
 @app.route("/register", methods=['GET', 'POST'])
@@ -54,9 +54,9 @@ def register():
         return redirect("/card")
 
 
-@app.route("/card")
+@app.route("/app")
 def card():
-    return render_template("card.html")
+    return render_template("app.html")
 
 
 @app.route("/logout")
