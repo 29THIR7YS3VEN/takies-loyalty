@@ -58,3 +58,6 @@ input {
     height: 50px;
     display: flex;
 }
+.app-body{
+    background-color: white;
+}
