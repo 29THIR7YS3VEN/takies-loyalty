@@ -3,37 +3,36 @@
 <div id="app-body">
     <div class="app-header">
         <img class="logo-small" src="../static/images/download.jpg" alt="tw-logo"/><br>
-        <h2>Welcome, Kehinde</h2>
-        <div class="nav-icons" style="display: flex;">
-            <i class="fa-solid fa-house"></i>
-            <i class="fa-solid fa-gift"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-bell"></i>
-        </div>
     </div>
     <div class="page home">
-        <section class="banner">
-            Order from us and get rewards!
+        <section class="app-banner">
+            Order from us <br> and get rewards!
         </section>
-        <section class="about">
-            <h1 class="app-header">How it works</h1>
-            <div>
+        <section class="app-about">
+            <h1 class="app-heading">How it works</h1>
+            <br><br>
+            <div class="roww">
                 <div class="badge">1</div>
                 <p>Frequently order a minimum of 5000 RWF from our shop via Vuba Vuba and Rush Foods</p>
             </div>
-            <div>
+            <div class="roww">
                 <div class="badge">2</div>
                 <p>We award you a stamp for each order</p>
             </div>
-            <div>
+            <div class="roww">
                 <div class="badge">3</div>
                 <p>You will be notified when you have enough stamps for a reward.</p>
             </div>
             <p>Your stamp card resets every month, so be quick!</p>
+            <br><br>
+            <h3 class="action">Take a look at what you can win!</h3>
         </section>
-        <section class="award-banner">
-            <h2>Take a look at what you can win!</h2>
-        </section>
+    </div>
+    <div class="nav-icons" style="display: flex;">
+        <a href="/app"><i class="fa-solid fa-house" style="color: rgba(133,0,0,1);"></i></a>
+        <a href="/gift"><i class="fa-solid fa-gift"></i></a>
+        <a href="/card"><i class="fa-solid fa-star"></i></a>
+        <a href="/notifications"><i class="fa-solid fa-bell"></i></a>
     </div>
 </div>
 {% endblock %}

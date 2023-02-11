@@ -51,12 +51,16 @@ def register():
             "SELECT * FROM users WHERE username = :username", username=username)
         session["user_id"] = user[0]["id"]
 
-        return redirect("/card")
+        return redirect("/app")
 
 
 @app.route("/app")
-def card():
+def applicationw():
     return render_template("app.html")
+
+@app.route("/card")
+def card():
+    return render_template("card.html")
 
 
 @app.route("/logout")
