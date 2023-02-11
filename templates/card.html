@@ -2,12 +2,16 @@
 {% block main %}
 <div id="app-body">
     <div class="app-header">
-        <img class="logo-small" src="../static/images/download.jpg" alt="tw-logo"/><br>
+        <img class="logo-small" src="../static/images/download.jpg" alt="tw-logo" /><br>
     </div>
     <div class="page home">
+        <br>
         <section class="app-about">
-            <h1 class="app-heading">Your stamp card</h1>
-            <br><br>
+            <h1>Your stamp card</h1>
+            <p>New stamps will appear hear each time you order.</p>
+            <br>
+            <p><strong>Current number of stamps: </strong><span>0</span></p>
+            <p><strong>Days left: </strong><span>50</span></p>
             <div class="parent">
                 <div class="div1"> </div>
                 <div class="div2"> </div>
@@ -60,13 +64,15 @@
                 <div class="div49"> </div>
                 <div class="div50"> </div>
             </div>
+
+
         </section>
     </div>
-    <div class="nav-icons" style="display: flex;">
-        <a href="/app"><i class="fa-solid fa-house"></i></a>
-        <a href="/gift"><i class="fa-solid fa-gift"></i></a>
-        <i class="fa-solid fa-star" style="color: rgba(133,0,0,1);"></i>
-        <a href="/notifications"><i class="fa-solid fa-bell"></i></a>
-    </div>
+</div>
+<div class="nav-icons" style="display: flex;">
+    <a href="/app"><i class="fa-solid fa-house" style="color: rgba(133,0,0,1);"></i></a>
+    <a href="/gift"><i class="fa-solid fa-gift"></i></a>
+    <a href="/card"><i class="fa-solid fa-star"></i></a>
+    <a href="/notifications"><i class="fa-solid fa-bell"></i></a>
 </div>
 {% endblock %}
